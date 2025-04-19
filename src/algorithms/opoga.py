@@ -1,7 +1,10 @@
-from algorithm import *
+from algorithms.algorithm import *
+from algorithms.algorithm_factory import *
 from util import *
 import numpy as np
 
+
+@AlgorithmFactory.register("OPOGA")
 class OPOGA(Algorithm):
     def __init__(self, n):
         """

@@ -1,49 +1,31 @@
+from algorithms.algorithm import *
+from algorithms.algorithm_factory import *
+from util import *
 import random
 import numpy as np
 from math import log
 
-
-def biased_crossover(x1, x2, p):
-    mask = np.random.rand(len(x1)) < p
-    return np.where(mask, x2, x1)
-
-
-def select_population(other, parent, offspring, f_other, f_parent, f_off):
-    if f_off > f_parent:
-        return other, offspring, f_other, f_off
-    elif f_off == f_parent:
-        h_other_parent = np.count_nonzero(other != parent)
-        h_other_offspring = np.count_nonzero(other != offspring)
-
-        if h_other_parent > h_other_offspring:
-            return other, parent, f_other, f_parent
-        elif h_other_parent == h_other_offspring:
-            return random.choice(
-                [(other, parent, f_other, f_parent), (other, offspring, f_other, f_off)]
-            )
-        else:
-            return other, offspring, f_other, f_off
-    else:
-        return other, parent, f_other, f_parent
-
-
-class DEGA_new_iterated:
+@AlgorithmFactory.register('DEGA_B')
+class DEGA_B(Algorithm):
     def __str__(self):
-        return "(2+1)-DEGA"
+        return f"(2+1)-DEGA_B(n={self.n}, chi={self.chi}) [limited to u={self.u}]"
 
-    def __init__(self, lmbd, n):
+    def __init__(self, n, u=None):
         """
-        Initialize the DEGA.
+        Initialize the DEGA_B.
 
         Args:
             n (int): Length of the binary string.
-            lamb (int): Lambda of the algorithm
+            u (int, optional): Number of crossover tries
         """
         self.n = n
         self.chi = 1.0
-        self.lmbd = lmbd
+        if u == None:
+            self.u = int(10 * log(n))
+        else:
+            self.u = u
 
-    def __call__(self, problem, optimum, max_evals):
+    def run(self, problem, optimum, max_evals):
         x_1 = np.random.randint(0, 2, size=self.n)
         x_2 = 1 - x_1
 
@@ -72,12 +54,12 @@ class DEGA_new_iterated:
                 f_off = problem(offspring)
                 cnt += 1
                 x_1, x_2, f_1, f_2 = select_population(
-                    other=other,
-                    parent=parent,
-                    offspring=offspring,
-                    f_off=f_off,
-                    f_other=f_other,
-                    f_parent=f_parent,
+                    other,
+                    parent,
+                    offspring,
+                    f_other,
+                    f_parent,
+                    f_off,
                 )
             else:
                 y = biased_crossover(x_1, x_2, 0.5)
@@ -90,7 +72,7 @@ class DEGA_new_iterated:
                 cnt += 1
 
                 if f_y > f_1:
-                    for _ in range(int(10*log(self.n))):
+                    for _ in range(int(10 * log(self.n))):
                         offspring = biased_crossover(x_1, y, 1 / 2)
                         f_off = problem(offspring)
                         cnt += 1

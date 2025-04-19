@@ -1,8 +1,11 @@
-from algorithm import *
+from algorithms.algorithm import *
+from algorithms.algorithm_factory import *
 import random
 import numpy as np
 from util import *
 
+
+@AlgorithmFactory.register("TPOGA")
 class TPOGA(Algorithm):
     def __init__(self, n):
         """
@@ -40,9 +43,17 @@ class TPOGA(Algorithm):
             candidate_fitness = self.fitness + [offspring_fitness]
 
             # Sort candidates (prefer offspring in ties by favoring index==2).
-            sorted_indices = sorted(range(3), key=lambda i: (-candidate_fitness[i], i == 2))
-            self.population = [candidates[sorted_indices[0]], candidates[sorted_indices[1]]]
-            self.fitness = [candidate_fitness[sorted_indices[0]], candidate_fitness[sorted_indices[1]]]
+            sorted_indices = sorted(
+                range(3), key=lambda i: (-candidate_fitness[i], i == 2)
+            )
+            self.population = [
+                candidates[sorted_indices[0]],
+                candidates[sorted_indices[1]],
+            ]
+            self.fitness = [
+                candidate_fitness[sorted_indices[0]],
+                candidate_fitness[sorted_indices[1]],
+            ]
             best_fitness = max(self.fitness)
 
             # Check for convergence.
@@ -52,6 +63,6 @@ class TPOGA(Algorithm):
 
         print("exceeded max iterations", best_fitness)
         return (best_fitness, cnt)
-    
+
     def __str__(self):
         return f"(2+1)-GA(n={self.n}, chi={self.chi})"

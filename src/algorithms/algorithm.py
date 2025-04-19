@@ -1,11 +1,13 @@
 from abc import ABC, abstractmethod
 
+
 class Algorithm(ABC):
     """
     Abstract class used for the different simulation runs.
     Inherit from this class, implement the run method and
     run simulations using the Runner class.
     """
+
     def __init__(self, **kwargs):
         self.params = kwargs
 

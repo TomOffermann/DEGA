@@ -1,7 +1,9 @@
-from algorithm import *
+from algorithms.algorithm import *
+from algorithms.algorithm_factory import *
 from util import *
 import numpy as np
 
+@AlgorithmFactory.register('OPLLGA')
 class OPLLGA(Algorithm):
     def __init__(self, n, lamb, chi):
         """
@@ -41,7 +43,10 @@ class OPLLGA(Algorithm):
 
             # Recombination phase: generate lambda offspring via crossover
             crossover_rate = 1 / self.chi
-            offspring = [biased_crossover(x, best_mutant, crossover_rate) for _ in range(self.lamb)]
+            offspring = [
+                biased_crossover(x, best_mutant, crossover_rate)
+                for _ in range(self.lamb)
+            ]
             offspring_fitness = [problem(child) for child in offspring]
             cnt += self.lamb
 
@@ -53,7 +58,7 @@ class OPLLGA(Algorithm):
             if offspring_fitness[best_offspring_idx] > f_x:
                 x = best_offspring
                 f_x = offspring_fitness[best_offspring_idx]
-        
+
         print("exceeded max iterations", f_x)
         return (f_x, cnt)
 

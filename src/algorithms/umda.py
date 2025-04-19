@@ -1,7 +1,9 @@
-from algorithm import *
+from algorithms.algorithm import *
+from algorithms.algorithm_factory import *
 import numpy as np
 
 
+@AlgorithmFactory.register("UMDA")
 class UMDA(Algorithm):
     def __init__(self, n, lmbd, mu):
         """

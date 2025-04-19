@@ -17,7 +17,7 @@ $f: \{0,1\}^n \mapsto \mathbb R$.
 ### How to get started
 
 1. Clone this repository & make sure Python (at least `3.9`, check with `python --version`) is correctly installed.
-2. Make sure all necessary packages are installed (if not, use `pip install ...`).
+2. Make sure all necessary packages are installed (if not, use `pip install ...`). These include common packages like `matplotlib` and `numpy`
 
 ---
 
@@ -37,14 +37,15 @@ The code leaves room for natural optimizations — if you improve any of the imp
 The paper (TODO: Add link to paper) mentions three different DEGA implementations:
 
 1. **DEGA** – Simplest version used in the theoretical proofs (Section 2 of the paper).
-2. **DEGA_A** – A more robust version discussed in Section 5.1 (includes a flowchart).
-3. **DEGA_B** – An illustrative version utilizing algorithmic ideas from [1], more tailored toward *LeadingOnes*.
+2. **DEGA_Limit** – **DEGA** constrained to $u(n)$ exploitation phases. We set a default $u(n) = \lambda \log n$.
+3. **DEGA_A** – A more robust version discussed in Section 5.1 (includes a flowchart).
+4. **DEGA_B** – An illustrative version utilizing algorithmic ideas from [1], more tailored toward *LeadingOnes*. Also discussed in Section 5.1.
 
 Other implemented algorithms include:
-* `$(2+1)$-GA`
-* `$(1+1)$-GA`
-* `$(1+(\lambda, \lambda))$-GA`
-* `UMDA`
+* **$(2+1)$-GA**
+* **$(1+1)$-GA**
+* **$(1+(\lambda, \lambda))$-GA**
+* **UMDA**
 
 These algorithms can be tested on a subset of the PBO suite from the IOHanalyzer [2], including:
 * **LeadingOnes**
