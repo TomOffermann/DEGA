@@ -1,0 +1,364 @@
+{
+  "jobs": [
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "LO",
+      "n": 100,
+      "reps": 50,
+      "max_evals": 100000,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=100, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 129
+      },
+      "benchmark": "LO",
+      "n": 129,
+      "reps": 50,
+      "max_evals": 166410,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=129, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 166
+      },
+      "benchmark": "LO",
+      "n": 166,
+      "reps": 50,
+      "max_evals": 275560,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=166, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 215
+      },
+      "benchmark": "LO",
+      "n": 215,
+      "reps": 50,
+      "max_evals": 462250,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=215, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 278
+      },
+      "benchmark": "LO",
+      "n": 278,
+      "reps": 50,
+      "max_evals": 772840,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=278, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 359
+      },
+      "benchmark": "LO",
+      "n": 359,
+      "reps": 50,
+      "max_evals": 1288810,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=359, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 464
+      },
+      "benchmark": "LO",
+      "n": 464,
+      "reps": 50,
+      "max_evals": 2152960,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=464, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 599
+      },
+      "benchmark": "LO",
+      "n": 599,
+      "reps": 50,
+      "max_evals": 3588010,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=599, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 774
+      },
+      "benchmark": "LO",
+      "n": 774,
+      "reps": 50,
+      "max_evals": 5990760,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=774, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 1000
+      },
+      "benchmark": "LO",
+      "n": 1000,
+      "reps": 50,
+      "max_evals": 10000000,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=1000, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "OM",
+      "n": 100,
+      "reps": 50,
+      "max_evals": 100000,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=100, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 166
+      },
+      "benchmark": "OM",
+      "n": 166,
+      "reps": 50,
+      "max_evals": 275560,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=166, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 278
+      },
+      "benchmark": "OM",
+      "n": 278,
+      "reps": 50,
+      "max_evals": 772840,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=278, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 464
+      },
+      "benchmark": "OM",
+      "n": 464,
+      "reps": 50,
+      "max_evals": 2152960,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=464, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 774
+      },
+      "benchmark": "OM",
+      "n": 774,
+      "reps": 50,
+      "max_evals": 5990760,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=774, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 1291
+      },
+      "benchmark": "OM",
+      "n": 1291,
+      "reps": 50,
+      "max_evals": 16666810,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=1291, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 2154
+      },
+      "benchmark": "OM",
+      "n": 2154,
+      "reps": 50,
+      "max_evals": 46397160,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=2154, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 3593
+      },
+      "benchmark": "OM",
+      "n": 3593,
+      "reps": 50,
+      "max_evals": 129096490,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=3593, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 5994
+      },
+      "benchmark": "OM",
+      "n": 5994,
+      "reps": 50,
+      "max_evals": 359280360,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=5994, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 10000
+      },
+      "benchmark": "OM",
+      "n": 10000,
+      "reps": 50,
+      "max_evals": 1000000000,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=10000, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "LFHW",
+      "n": 100,
+      "reps": 50,
+      "max_evals": 100000,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=100, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 154
+      },
+      "benchmark": "LFHW",
+      "n": 154,
+      "reps": 50,
+      "max_evals": 237160,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=154, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 238
+      },
+      "benchmark": "LFHW",
+      "n": 238,
+      "reps": 50,
+      "max_evals": 566440,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=238, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 368
+      },
+      "benchmark": "LFHW",
+      "n": 368,
+      "reps": 50,
+      "max_evals": 1354240,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=368, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 568
+      },
+      "benchmark": "LFHW",
+      "n": 568,
+      "reps": 50,
+      "max_evals": 3226240,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=568, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 878
+      },
+      "benchmark": "LFHW",
+      "n": 878,
+      "reps": 50,
+      "max_evals": 7708840,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=878, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 1357
+      },
+      "benchmark": "LFHW",
+      "n": 1357,
+      "reps": 50,
+      "max_evals": 18414490,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=1357, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 2096
+      },
+      "benchmark": "LFHW",
+      "n": 2096,
+      "reps": 50,
+      "max_evals": 43932160,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=2096, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 3237
+      },
+      "benchmark": "LFHW",
+      "n": 3237,
+      "reps": 50,
+      "max_evals": 104781690,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=3237, budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 4999
+      },
+      "benchmark": "LFHW",
+      "n": 4999,
+      "reps": 50,
+      "max_evals": 249900010,
+      "budget_description": "10*n^2",
+      "description": "DEGA_A(n=4999, budget=10*n^2)"
+    }
+  ]
+}

@@ -18,14 +18,18 @@ class TPOGA(Algorithm):
         self.n = n
         self.chi = 1.0
 
-    def run(self, problem, optimum, max_evals, eps=0):
+    def run(self, problem, optimum, max_evals, eps=0, track_fitness=False):
         # Initialize a population of two individuals.
         self.population = [np.random.randint(2, size=self.n) for _ in range(2)]
         self.fitness = [problem(ind) for ind in self.population]
         cnt = 2
         best_fitness = max(self.fitness)
 
+        F = []
+
         while cnt < max_evals:
+            if track_fitness:
+                F.append((cnt, best_fitness))
             # Determine crossover or copy strategy.
             if random.random() < 0.5:
                 offspring = uniform_crossover(self.population[0], self.population[1])
@@ -59,10 +63,10 @@ class TPOGA(Algorithm):
             # Check for convergence.
             if best_fitness >= optimum:
                 print("converged")
-                return (best_fitness, cnt)
+                return (best_fitness, cnt, F) if track_fitness else (best_fitness, cnt)
 
         print("exceeded max iterations", best_fitness)
-        return (best_fitness, cnt)
+        return (best_fitness, cnt, F) if track_fitness else (best_fitness, cnt)
 
     def __str__(self):
         return f"(2+1)-GA(n={self.n}, chi={self.chi})"

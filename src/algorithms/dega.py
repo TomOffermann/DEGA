@@ -4,9 +4,10 @@ from util import *
 import random
 import numpy as np
 
-@AlgorithmFactory.register('DEGA')
+
+@AlgorithmFactory.register("DEGA")
 class DEGA(Algorithm):
-    def __init__(self, lmbd, n):
+    def __init__(self, lamb, n):
         """
         Initialize the standard DEGA (Section 2).
 
@@ -14,15 +15,15 @@ class DEGA(Algorithm):
             n (int): Length of the binary string.
             lamb (int): Lambda parameter of the algorithm
         """
-        super().__init__(n=n, lmbd=lmbd)
+        super().__init__(n=n, lamb=lamb)
         self.n = n
-        self.lmbd = lmbd
+        self.lamb = lamb
         self.chi = 1.0
 
     def __str__(self):
-        return f"(2+1)-DEGA(n={self.n}, lambda={self.lmbd}, chi={self.chi})"
+        return f"(2+1)-DEGA(n={self.n}, lambda={self.lamb}, chi={self.chi})"
 
-    def run(self, problem, optimum, max_evals, eps=0):
+    def run(self, problem, optimum, max_evals, eps=0, track_fitness=False):
         x_1 = np.random.randint(0, 2, size=self.n)
         x_2 = 1 - x_1
 
@@ -31,18 +32,22 @@ class DEGA(Algorithm):
 
         cnt = 2
 
+        F = []
+
         while cnt < max_evals:
+            if track_fitness:
+                F.append(max(f_1, f_2))
             # Check Convergence
             if max(f_1, f_2) >= optimum:
                 print("converged")
-                return (max(f_1, f_2), cnt)
+                return (max(f_1, f_2), cnt, F) if track_fitness else (max(f_1, f_2), cnt)
 
             if f_1 != f_2:  # Exploitation Phase
                 if f_1 > f_2:
                     x_1, x_2 = x_2, x_1
                     f_1, f_2 = f_2, f_1
 
-                off = biased_crossover(x_1, x_2, 1 / self.lmbd)
+                off = biased_crossover(x_1, x_2, 1 / self.lamb)
                 f_off = problem(off)
                 cnt += 1
 
@@ -67,4 +72,4 @@ class DEGA(Algorithm):
                 )
 
         print("exceeded max iterations", max(f_1, f_2))
-        return (max(f_1, f_2), cnt)
+        return (max(f_1, f_2), cnt, F) if track_fitness else (max(f_1, f_2), cnt)

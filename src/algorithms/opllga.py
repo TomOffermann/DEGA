@@ -19,17 +19,21 @@ class OPLLGA(Algorithm):
         self.lamb = lamb
         self.chi = chi
 
-    def run(self, problem, optimum, max_evals, eps=0):
+    def run(self, problem, optimum, max_evals, eps=0, track_fitness=False):
         n = self.n
         x = np.random.randint(2, size=n)
         f_x = problem(x)
         cnt = 1
 
+        F = []
+
         while cnt < max_evals:
+            if track_fitness:
+                F.append((cnt, f_x))
             # Check convergence
             if f_x >= optimum:
                 print("converged")
-                return (f_x, cnt)
+                return (f_x, cnt, F) if track_fitness else (f_x, cnt)
 
             mutation_rate = self.chi / n
             # Generate lambda mutants from the current solution
@@ -60,7 +64,7 @@ class OPLLGA(Algorithm):
                 f_x = offspring_fitness[best_offspring_idx]
 
         print("exceeded max iterations", f_x)
-        return (f_x, cnt)
+        return (f_x, cnt, F) if track_fitness else (f_x, cnt)
 
     def __str__(self):
         return f"(1+(l,l))-GA(n={self.n}, lamb={self.lamb}, chi={self.chi})"

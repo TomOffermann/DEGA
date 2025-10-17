@@ -78,7 +78,7 @@ def _mivs_opt(n: int) -> float:
         92: 40.09,
         100: 43.61,
     }
-    return lookup.get(n, 0.0)
+    return int(lookup.get(n, 0.0) - 0.5)
 
 
 def _default_budget(n: int) -> int:
@@ -93,3 +93,4 @@ Benchmarks.register("MIVS", "MIVS", mivs, _mivs_opt, _default_budget)
 Benchmarks.register(
     "LFHW", "LFHW", linear_harmonic, lambda n: n * (n + 1) // 2, _default_budget
 )
+Benchmarks.register("JUMP", "JUMP", jump_m, lambda n: n, _default_budget)

@@ -82,9 +82,24 @@ class JobSuiteBuilder:
 
         for n in n_values:
             # resolve algorithm args
-            resolved_args = {"n": int(n)}
-            for k, v in algo_args.items():
-                resolved_args[k] = v(n) if callable(v) else v
+            # inspect the real __init__ signature
+            sig = inspect.signature(alg_cls.__init__)
+            resolved_args: Dict[str, Any] = {}
+            for pname, param in sig.parameters.items():
+                if pname == 'self':
+                    continue
+                if pname == 'n':
+                    resolved_args['n'] = int(n)
+                elif pname in algo_args:
+                    raw = algo_args[pname]
+                    val = raw(n) if callable(raw) else raw
+                    # if val is a float but the default isn't float, cast to int
+                    default = param.default
+                    if isinstance(val, float) and not isinstance(default, float):
+                        val = int(val)
+                    resolved_args[pname] = val
+                # otherwise leave it out so __init__ uses its own default
+
 
             # determine budget
             if budget is None:

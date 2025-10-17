@@ -7,8 +7,8 @@ def mutate(individual, mutation_rate):
     return np.where(mask, 1 - individual, individual)
 
 
-def uniform_crossover(self, parent1, parent2):
-    mask = np.random.rand(self.n) < 0.5
+def uniform_crossover(parent1, parent2):
+    mask = np.random.rand(len(parent1)) < 0.5
     return np.where(mask, parent1, parent2)
 
 
@@ -16,11 +16,6 @@ def biased_crossover(x1, x2, p):
     mask = np.random.rand(len(x1)) < p
     return np.where(mask, x2, x1)
 
-
-# util.py
-
-import random
-import numpy as np
 
 def select_population(x1, x2, x3, f1, f2, f3):
     """
@@ -37,15 +32,14 @@ def select_population(x1, x2, x3, f1, f2, f3):
         (a, b, f_a, f_b): chosen pair and their fitnesses,
         with f_a >= f_b.
     """
+
     # Hamming distance between two bit‑arrays
     def ham(u, v):
         return int(np.count_nonzero(u != v))
 
     # build list of all pairs
     candidates = []
-    for (u, v, fu, fv) in ((x1, x2, f1, f2),
-                           (x1, x3, f1, f3),
-                           (x2, x3, f2, f3)):
+    for u, v, fu, fv in ((x1, x2, f1, f2), (x1, x3, f1, f3), (x2, x3, f2, f3)):
         score = (max(fu, fv), min(fu, fv))  # lexicographic compare
         d = ham(u, v)
         candidates.append((u, v, fu, fv, score, d))
@@ -109,3 +103,34 @@ def select_population_limit(x1, x2, x3, f1, f2, f3, l):
 
     new_l = 0 if used_off else l
     return xa, xb, fa, fb, new_l
+
+
+def select_population_dega_a(offspring, parent, other, f_off, f_parent, f_other):
+    if f_off < f_parent:
+        return parent, other, f_parent, f_other
+    elif f_off == f_parent:
+        if np.count_nonzero(offspring != other) > np.count_nonzero(parent != other):
+            return offspring, other, f_off, f_other
+        else:
+            return parent, other, f_parent, f_other
+    else:
+        return offspring, other, f_off, f_other
+
+
+def select_population_alter_parent(other, parent, offspring, f_other, f_parent, f_off):
+    if f_off > f_parent:
+        return other, offspring, f_other, f_off
+    elif f_off == f_parent:
+        h_other_parent = np.count_nonzero(other != parent)
+        h_other_offspring = np.count_nonzero(other != offspring)
+
+        if h_other_parent > h_other_offspring:
+            return other, parent, f_other, f_parent
+        elif h_other_parent == h_other_offspring:
+            return random.choice(
+                [(other, parent, f_other, f_parent), (other, offspring, f_other, f_off)]
+            )
+        else:
+            return other, offspring, f_other, f_off
+    else:
+        return other, parent, f_other, f_parent

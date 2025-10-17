@@ -1,0 +1,274 @@
+{
+  "jobs": [
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 21,
+        "n": 100
+      },
+      "benchmark": "OM",
+      "n": 100,
+      "reps": 10,
+      "max_evals": 100000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=100, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 31,
+        "n": 180
+      },
+      "benchmark": "OM",
+      "n": 180,
+      "reps": 10,
+      "max_evals": 324000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=180, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 47,
+        "n": 324
+      },
+      "benchmark": "OM",
+      "n": 324,
+      "reps": 10,
+      "max_evals": 1049760,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=324, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 69,
+        "n": 584
+      },
+      "benchmark": "OM",
+      "n": 584,
+      "reps": 10,
+      "max_evals": 3410560,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=584, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 103,
+        "n": 1053
+      },
+      "benchmark": "OM",
+      "n": 1053,
+      "reps": 10,
+      "max_evals": 11088090,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=1053, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 153,
+        "n": 1898
+      },
+      "benchmark": "OM",
+      "n": 1898,
+      "reps": 10,
+      "max_evals": 36024040,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=1898, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 226,
+        "n": 3419
+      },
+      "benchmark": "OM",
+      "n": 3419,
+      "reps": 10,
+      "max_evals": 116895610,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=3419, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 336,
+        "n": 6161
+      },
+      "benchmark": "OM",
+      "n": 6161,
+      "reps": 10,
+      "max_evals": 379579210,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=6161, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 497,
+        "n": 11100
+      },
+      "benchmark": "OM",
+      "n": 11100,
+      "reps": 10,
+      "max_evals": 1232100000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=11100, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "DEGA",
+      "algo_args": {
+        "lamb": 736,
+        "n": 20000
+      },
+      "benchmark": "OM",
+      "n": 20000,
+      "reps": 10,
+      "max_evals": 4000000000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=20000, lamb=n^(2/3), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 100,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 100,
+      "reps": 10,
+      "max_evals": 100000,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=100, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 180,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 180,
+      "reps": 10,
+      "max_evals": 324000,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=180, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 324,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 324,
+      "reps": 10,
+      "max_evals": 1049760,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=324, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 584,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 584,
+      "reps": 10,
+      "max_evals": 3410560,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=584, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 1053,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 1053,
+      "reps": 10,
+      "max_evals": 11088090,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=1053, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 1898,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 1898,
+      "reps": 10,
+      "max_evals": 36024040,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=1898, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 3419,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 3419,
+      "reps": 10,
+      "max_evals": 116895610,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=3419, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 6161,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "OM",
+      "n": 6161,
+      "reps": 10,
+      "max_evals": 379579210,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=6161, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 11100,
+        "lamb": 3,
+        "chi": 3
+      },
+      "benchmark": "OM",
+      "n": 11100,
+      "reps": 10,
+      "max_evals": 1232100000,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=11100, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 20000,
+        "lamb": 3,
+        "chi": 3
+      },
+      "benchmark": "OM",
+      "n": 20000,
+      "reps": 10,
+      "max_evals": 4000000000,
+      "budget_description": "10*n^2",
+      "description": "OPLLGA(n=20000, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=10*n^2)"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ class Algorithm(ABC):
         self.params = kwargs
 
     @abstractmethod
-    def run(self, problem, optimum, max_evals, eps=0):
+    def run(self, problem, optimum, max_evals, eps=0, track_fitness=False):
         """
         Run the algorithm.
         Args:

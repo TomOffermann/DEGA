@@ -5,7 +5,8 @@ import random
 import numpy as np
 from math import log
 
-@AlgorithmFactory.register('DEGA_A')
+
+@AlgorithmFactory.register("DEGA_A")
 class DEGA_A:
     def __str__(self):
         return f"(2+1)-DEGA_A(n={self.n}, chi={self.chi})"
@@ -21,7 +22,7 @@ class DEGA_A:
         self.n = n
         self.chi = 1.0
 
-    def run(self, problem, optimum, max_evals):
+    def run(self, problem, optimum, max_evals, track_fitness=False):
         x_1 = np.random.randint(0, 2, size=self.n)
         x_2 = 1 - x_1
 
@@ -30,11 +31,15 @@ class DEGA_A:
 
         cnt = 2
 
+        F = []
+
         while cnt < max_evals:
+            if track_fitness:
+                F.append((cnt, max(f_1, f_2))) 
             # Check Convergence
             if max(f_1, f_2) >= optimum:
                 print("converged")
-                return (max(f_1, f_2), cnt)
+                return (max(f_1, f_2), cnt, F) if track_fitness else (max(f_1, f_2), cnt)
 
             if random.random() < 0.5:  # Mutate
                 (parent, other, f_parent, f_other) = (
@@ -49,8 +54,8 @@ class DEGA_A:
 
                 f_off = problem(offspring)
                 cnt += 1
-                x_1, x_2, f_1, f_2 = select_population(
-                    other, parent, offspring, f_other, f_parent, f_off
+                x_1, x_2, f_1, f_2 = select_population_dega_a(
+                    offspring, parent, other, f_off, f_parent, f_other
                 )
             else:
                 y = biased_crossover(x_1, x_2, 0.5)
@@ -63,7 +68,7 @@ class DEGA_A:
                 cnt += 1
 
                 if f_y > f_1:
-                    hamm_dist = np.count_nonzero(f_y != f_1)
+                    hamm_dist = np.count_nonzero(y != x_1)
                     for _ in range(int(hamm_dist * log(self.n))):
                         off = biased_crossover(x_1, y, 1 / hamm_dist)
                         f_off = problem(off)
@@ -75,4 +80,4 @@ class DEGA_A:
                             f_1 = f_off
                             break
         print("exceeded max iterations", max(f_1, f_2))
-        return (max(f_1, f_2), cnt)
+        return (max(f_1, f_2), cnt, F) if track_fitness else (max(f_1, f_2), cnt)

@@ -1,244 +1,30 @@
 {
   "jobs": [
     {
-      "algorithm": "DEGA_A",
+      "algorithm": "DEGA",
       "algo_args": {
-        "n": 49
+        "lamb": 1648,
+        "n": 7500
       },
       "benchmark": "LO",
-      "n": 49,
-      "reps": 30,
-      "max_evals": 240100,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=49, budget=100n^2)"
+      "n": 7500,
+      "reps": 50,
+      "max_evals": 562500000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=7500, lamb=(n*log(n))**(2/3), budget=10*n^2)"
     },
     {
-      "algorithm": "DEGA_A",
+      "algorithm": "DEGA",
       "algo_args": {
-        "n": 54
+        "lamb": 86,
+        "n": 7500
       },
       "benchmark": "LO",
-      "n": 54,
-      "reps": 30,
-      "max_evals": 291600,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=54, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 58
-      },
-      "benchmark": "LO",
-      "n": 58,
-      "reps": 30,
-      "max_evals": 336400,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=58, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 62
-      },
-      "benchmark": "LO",
-      "n": 62,
-      "reps": 30,
-      "max_evals": 384400,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=62, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 68
-      },
-      "benchmark": "LO",
-      "n": 68,
-      "reps": 30,
-      "max_evals": 462400,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=68, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 73
-      },
-      "benchmark": "LO",
-      "n": 73,
-      "reps": 30,
-      "max_evals": 532900,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=73, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 79
-      },
-      "benchmark": "LO",
-      "n": 79,
-      "reps": 30,
-      "max_evals": 624100,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=79, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 85
-      },
-      "benchmark": "LO",
-      "n": 85,
-      "reps": 30,
-      "max_evals": 722500,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=85, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 92
-      },
-      "benchmark": "LO",
-      "n": 92,
-      "reps": 30,
-      "max_evals": 846400,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=92, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_A",
-      "algo_args": {
-        "n": 100
-      },
-      "benchmark": "LO",
-      "n": 100,
-      "reps": 30,
-      "max_evals": 1000000,
-      "budget_description": "100n^2",
-      "description": "DEGA_A(n=100, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 49
-      },
-      "benchmark": "LO",
-      "n": 49,
-      "reps": 30,
-      "max_evals": 240100,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=49, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 54
-      },
-      "benchmark": "LO",
-      "n": 54,
-      "reps": 30,
-      "max_evals": 291600,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=54, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 58
-      },
-      "benchmark": "LO",
-      "n": 58,
-      "reps": 30,
-      "max_evals": 336400,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=58, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 62
-      },
-      "benchmark": "LO",
-      "n": 62,
-      "reps": 30,
-      "max_evals": 384400,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=62, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 68
-      },
-      "benchmark": "LO",
-      "n": 68,
-      "reps": 30,
-      "max_evals": 462400,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=68, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 73
-      },
-      "benchmark": "LO",
-      "n": 73,
-      "reps": 30,
-      "max_evals": 532900,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=73, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 79
-      },
-      "benchmark": "LO",
-      "n": 79,
-      "reps": 30,
-      "max_evals": 624100,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=79, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 85
-      },
-      "benchmark": "LO",
-      "n": 85,
-      "reps": 30,
-      "max_evals": 722500,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=85, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 92
-      },
-      "benchmark": "LO",
-      "n": 92,
-      "reps": 30,
-      "max_evals": 846400,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=92, budget=100n^2)"
-    },
-    {
-      "algorithm": "DEGA_B",
-      "algo_args": {
-        "n": 100
-      },
-      "benchmark": "LO",
-      "n": 100,
-      "reps": 30,
-      "max_evals": 1000000,
-      "budget_description": "100n^2",
-      "description": "DEGA_B(n=100, budget=100n^2)"
+      "n": 7500,
+      "reps": 50,
+      "max_evals": 562500000,
+      "budget_description": "10*n^2",
+      "description": "DEGA(n=7500, lamb=sqrt(n), budget=10*n^2)"
     }
   ]
 }

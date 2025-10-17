@@ -1,0 +1,1804 @@
+{
+  "jobs": [
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 20,
+        "lamb": 2
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=20, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 22,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=22, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 24,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=24, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 26,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=26, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 28,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=28, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 30,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=30, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 34,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=34, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 36,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=36, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 40,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=40, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 42,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=42, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 46,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=46, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 50,
+        "lamb": 3
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=50, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 56,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=56, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 60,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=60, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 66,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=66, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 72,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=72, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 78,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=78, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 84,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=84, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 92,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=92, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 100,
+        "lamb": 4
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=100, lamb=log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 20,
+        "lamb": 7
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=20, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 22,
+        "lamb": 7
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=22, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 24,
+        "lamb": 8
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=24, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 26,
+        "lamb": 8
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=26, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 28,
+        "lamb": 9
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=28, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 30,
+        "lamb": 9
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=30, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 34,
+        "lamb": 10
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=34, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 36,
+        "lamb": 10
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=36, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 40,
+        "lamb": 11
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=40, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 42,
+        "lamb": 12
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=42, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 46,
+        "lamb": 12
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=46, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 50,
+        "lamb": 13
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=50, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 56,
+        "lamb": 14
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=56, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 60,
+        "lamb": 15
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=60, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 66,
+        "lamb": 16
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=66, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 72,
+        "lamb": 17
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=72, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 78,
+        "lamb": 18
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=78, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 84,
+        "lamb": 19
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=84, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 92,
+        "lamb": 20
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=92, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_Limit",
+      "algo_args": {
+        "n": 100,
+        "lamb": 21
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_Limit(n=100, lamb=n^(2/3), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 20
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=20, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 22
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=22, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 24
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=24, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 26
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=26, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 28
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=28, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 30
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=30, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 34
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=34, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 36
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=36, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 40
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=40, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 42
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=42, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 46
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=46, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 50
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=50, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 56
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=56, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 60
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=60, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 66
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=66, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 72
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=72, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 78
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=78, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 84
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=84, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 92
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=92, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "TPOGA",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "TPOGA(n=100, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 20,
+        "lamb": 13,
+        "mu": 2
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=20, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 22,
+        "lamb": 14,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=22, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 24,
+        "lamb": 15,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=24, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 26,
+        "lamb": 16,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=26, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 28,
+        "lamb": 17,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=28, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 30,
+        "lamb": 18,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=30, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 34,
+        "lamb": 20,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=34, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 36,
+        "lamb": 21,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=36, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 40,
+        "lamb": 23,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=40, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 42,
+        "lamb": 24,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=42, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 46,
+        "lamb": 25,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=46, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 50,
+        "lamb": 27,
+        "mu": 3
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=50, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 56,
+        "lamb": 30,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=56, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 60,
+        "lamb": 31,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=60, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 66,
+        "lamb": 34,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=66, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 72,
+        "lamb": 36,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=72, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 78,
+        "lamb": 38,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=78, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 84,
+        "lamb": 40,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=84, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 92,
+        "lamb": 43,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=92, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "UMDA",
+      "algo_args": {
+        "n": 100,
+        "lamb": 46,
+        "mu": 4
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "UMDA(n=100, lamb=sqrt(n)*log(n), mu=sqrt(n)*log(n), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 20
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=20, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 22
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=22, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 24
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=24, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 26
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=26, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 28
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=28, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 30
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=30, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 34
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=34, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 36
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=36, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 40
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=40, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 42
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=42, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 46
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=46, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 50
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=50, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 56
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=56, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 60
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=60, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 66
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=66, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 72
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=72, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 78
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=78, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 84
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=84, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 92
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=92, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_A",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_A(n=100, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 20
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=20, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 22
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=22, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 24
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=24, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 26
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=26, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 28
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=28, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 30
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=30, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 34
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=34, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 36
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=36, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 40
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=40, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 42
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=42, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 46
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=46, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 50
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=50, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 56
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=56, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 60
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=60, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 66
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=66, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 72
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=72, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 78
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=78, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 84
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=84, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 92
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=92, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "DEGA_B",
+      "algo_args": {
+        "n": 100
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "DEGA_B(n=100, budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 20,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 20,
+      "reps": 1000,
+      "max_evals": 1797,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=20, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 22,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 22,
+      "reps": 1000,
+      "max_evals": 2040,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=22, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 24,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 24,
+      "reps": 1000,
+      "max_evals": 2288,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=24, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 26,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 26,
+      "reps": 1000,
+      "max_evals": 2541,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=26, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 28,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 28,
+      "reps": 1000,
+      "max_evals": 2799,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=28, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 30,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 30,
+      "reps": 1000,
+      "max_evals": 3061,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=30, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 34,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 34,
+      "reps": 1000,
+      "max_evals": 3596,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=34, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 36,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 36,
+      "reps": 1000,
+      "max_evals": 3870,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=36, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 40,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 40,
+      "reps": 1000,
+      "max_evals": 4426,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=40, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 42,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 42,
+      "reps": 1000,
+      "max_evals": 4709,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=42, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 46,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 46,
+      "reps": 1000,
+      "max_evals": 5283,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=46, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 50,
+        "lamb": 1,
+        "chi": 1
+      },
+      "benchmark": "MIVS",
+      "n": 50,
+      "reps": 1000,
+      "max_evals": 5868,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=50, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 56,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 56,
+      "reps": 1000,
+      "max_evals": 6762,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=56, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 60,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 60,
+      "reps": 1000,
+      "max_evals": 7369,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=60, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 66,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 66,
+      "reps": 1000,
+      "max_evals": 8295,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=66, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 72,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 72,
+      "reps": 1000,
+      "max_evals": 9237,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=72, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 78,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 78,
+      "reps": 1000,
+      "max_evals": 10194,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=78, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 84,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 84,
+      "reps": 1000,
+      "max_evals": 11165,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=84, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 92,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 92,
+      "reps": 1000,
+      "max_evals": 12480,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=92, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    },
+    {
+      "algorithm": "OPLLGA",
+      "algo_args": {
+        "n": 100,
+        "lamb": 2,
+        "chi": 2
+      },
+      "benchmark": "MIVS",
+      "n": 100,
+      "reps": 1000,
+      "max_evals": 13815,
+      "budget_description": "30*n*log(n)",
+      "description": "OPLLGA(n=100, lamb=sqrt(log(n)), chi=sqrt(log(n)), budget=30*n*log(n))"
+    }
+  ]
+}
