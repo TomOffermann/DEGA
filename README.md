@@ -1,8 +1,10 @@
 ## Diversity-Preserving Crossover Exploitation
 
-Authors: Johannes Lengler, Tom Offermann
-Institution: ETH Zürich, Switzerland
+**Authors:** Johannes Lengler, Tom Offermann
 
+**Institution:** ETH Zürich, Switzerland
+
+---
 This repository includes all the code for running the simulations in the following paper:
 https://dl.acm.org/doi/10.1145/3729878.3746613.
 
