@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/967063613.svg)](https://doi.org/10.5281/zenodo.17378116)
 ## Diversity-Preserving Crossover Exploitation
 
 **Authors:** Johannes Lengler, Tom Offermann
