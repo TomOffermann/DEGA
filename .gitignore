@@ -49,11 +49,6 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
-# Simulation outputs & data
-data/
-plots/
-*.npz
-
 # Logs
 logs/
 *.log
