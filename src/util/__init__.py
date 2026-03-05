@@ -2,6 +2,7 @@ from .helper import *
 
 __all__ = [
     "mutate",
+    "mutate_fixed_distance",
     "uniform_crossover",
     "biased_crossover",
     "select_population",

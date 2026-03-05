@@ -93,10 +93,10 @@ class JobSuiteBuilder:
                 elif pname in algo_args:
                     raw = algo_args[pname]
                     val = raw(n) if callable(raw) else raw
-                    # if val is a float but the default isn't float, cast to int
+                    # if val is float-like but the default isn't float, round to int
                     default = param.default
-                    if isinstance(val, float) and not isinstance(default, float):
-                        val = int(val)
+                    if isinstance(val, (float, np.floating)) and not isinstance(default, float):
+                        val = int(round(float(val)))
                     resolved_args[pname] = val
                 # otherwise leave it out so __init__ uses its own default
 
@@ -140,7 +140,11 @@ class JobSuiteBuilder:
                     "benchmark": benchmark_key,
                     "n": int(n),
                     "reps": int(reps),
-                    "max_evals": int(resolved_budget),
+                    "max_evals": (
+                        int(round(float(resolved_budget)))
+                        if isinstance(resolved_budget, (float, np.floating))
+                        else int(resolved_budget)
+                    ),
                     "budget_description": budget_desc,
                     "description": description,
                 }

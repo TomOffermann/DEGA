@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def mivs(x):
     """
     arr: np.array should be of even length

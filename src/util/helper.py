@@ -6,6 +6,21 @@ def mutate(individual, mutation_rate):
     mask = np.random.rand(len(individual)) < mutation_rate
     return np.where(mask, 1 - individual, individual)
 
+def mutate_fixed_distance(individual, distance):
+    """
+    Flip exactly `distance` bit positions chosen uniformly without replacement.
+    """
+    n = len(individual)
+    k = int(distance)
+    if k <= 0:
+        return np.copy(individual)
+    if k >= n:
+        return 1 - individual
+
+    offspring = np.copy(individual)
+    idx = np.random.choice(n, size=k, replace=False)
+    offspring[idx] = 1 - offspring[idx]
+    return offspring
 
 def uniform_crossover(parent1, parent2):
     mask = np.random.rand(len(parent1)) < 0.5

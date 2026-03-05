@@ -36,14 +36,26 @@ class OPLLGA(Algorithm):
                 return (f_x, cnt, F) if track_fitness else (f_x, cnt)
 
             mutation_rate = self.chi / n
-            # Generate lambda mutants from the current solution
-            mutants = [mutate(x, mutation_rate) for _ in range(self.lamb)]
+
+            # Sample fix distance for mutation
+            mutation_distance = np.random.binomial(n, mutation_rate)
+            mutants = [
+                mutate_fixed_distance(x, mutation_distance)
+                for _ in range(self.lamb)
+            ]
             mutant_fitness = [problem(mutant) for mutant in mutants]
             cnt += self.lamb
 
             # Select the best mutant
             best_mutant_idx = np.argmax(mutant_fitness)
             best_mutant = mutants[best_mutant_idx]
+            best_mutant_fit = mutant_fitness[best_mutant_idx]
+            
+            # Short-cut
+            if best_mutant_fit > f_x:
+                x = best_mutant
+                f_x = best_mutant_fit
+                continue
 
             # Recombination phase: generate lambda offspring via crossover
             crossover_rate = 1 / self.chi

@@ -52,3 +52,8 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+# Project-generated run artifacts
+src/logs_named_runs/
+src/overnight_named_runs.log
+src/jobs_tiny_verify_current.json

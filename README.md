@@ -34,15 +34,12 @@ $f: \{0,1\}^n \mapsto \mathbb R$.
 
 ### Implementation Details & Provided Functionality
 
-Implementations for the DEGA variants and other GAs are located in `./src/algorithms`.  
-The code leaves room for natural optimizations — if you improve any of the implementations, feel free to submit a pull request :)
+Implementations for the DEGA variants and other GAs are located in `./src/algorithms`. 
 
-The paper mentions three different DEGA implementations:
-
-1. **DEGA** – Simplest version used in the theoretical proofs (Section 2 of the paper).
-2. **DEGA_Limit** – **DEGA** constrained to $u(n)$ exploitation phases. We set a default $u(n) = \lambda \log n$.
-3. **DEGA_A** – A more robust version discussed in Section 5.1 (includes a flowchart).
-4. **DEGA_B** – An illustrative version utilizing algorithmic ideas from [1], more tailored toward _LeadingOnes_. Also discussed in Section 5.1.
+We implement the DEGA variations mention in the paper. This mainly includes:
+- **$DEGA$**
+- **$DEGA_+$**
+- **$DEGA_{LO}$**
 
 Other implemented algorithms include:
 
@@ -58,6 +55,7 @@ These algorithms can be tested on a subset of the PBO suite from the IOHanalyzer
 - **LFWH** (Linear Function, Harmonic Weights)
 - **MIVS** (Maximum Independent Vertex Set)
 
+We now also included **JUMP** as a benchmark and ran simulations
 ---
 
 ### References

@@ -78,13 +78,23 @@ def _mivs_opt(n: int) -> float:
         92: 40.09,
         100: 43.61,
     }
-    return int(lookup.get(n, 0.0) - 0.5)
+    return int(round(lookup.get(n, 0.0) - 0.5))
 
 
 def _default_budget(n: int) -> int:
     # 30 * n * log(n), rounds down
     return int(30 * (n * math.log(n)))
 
+def _jump2(x: np.ndarray) -> float:
+    return jump_m(x, 2)
+
+
+def _jump3(x: np.ndarray) -> float:
+    return jump_m(x, 3)
+
+
+def _jump4(x: np.ndarray) -> float:
+    return jump_m(x, 4)
 
 # register all benchmarks
 Benchmarks.register("LO", "LO", leading_ones, lambda n: n, _default_budget)
@@ -93,4 +103,8 @@ Benchmarks.register("MIVS", "MIVS", mivs, _mivs_opt, _default_budget)
 Benchmarks.register(
     "LFHW", "LFHW", linear_harmonic, lambda n: n * (n + 1) // 2, _default_budget
 )
-Benchmarks.register("JUMP", "JUMP", jump_m, lambda n: n, _default_budget)
+Benchmarks.register("JUMP2", "JUMP2", _jump2, lambda n: n, _default_budget)
+Benchmarks.register("JUMP3", "JUMP3", _jump3, lambda n: n, _default_budget)
+Benchmarks.register("JUMP4", "JUMP4", _jump4, lambda n: n, _default_budget)
+# Backward compatibility: default JUMP = JUMP_4.
+Benchmarks.register("JUMP", "JUMP4", _jump4, lambda n: n, _default_budget)

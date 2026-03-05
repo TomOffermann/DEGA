@@ -46,9 +46,9 @@ class TPOGA(Algorithm):
             candidates = self.population + [offspring]
             candidate_fitness = self.fitness + [offspring_fitness]
 
-            # Sort candidates (prefer offspring in ties by favoring index==2).
+            # Sort candidates by fitness; on ties prefer offspring (index 2).
             sorted_indices = sorted(
-                range(3), key=lambda i: (-candidate_fitness[i], i == 2)
+                range(3), key=lambda i: (-candidate_fitness[i], i != 2)
             )
             self.population = [
                 candidates[sorted_indices[0]],
