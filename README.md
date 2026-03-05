@@ -54,8 +54,8 @@ These algorithms can be tested on a subset of the PBO suite from the IOHanalyzer
 - **OneMax**
 - **LFWH** (Linear Function, Harmonic Weights)
 - **MIVS** (Maximum Independent Vertex Set)
+- **JUMP**
 
-We now also included **JUMP** as a benchmark and ran simulations
 ---
 
 ### References
